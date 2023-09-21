@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Bucket</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico.png">
+
+    <link rel="stylesheet" href="style.css">     
+</head>
+<body>
+    <div class="container">
+        <div class="took-task">
+            <h2>Add Task 📝</h2>
+            <div class="row">
+                <input type="text" id="input-text" placeholder="Add Your Task" autocomplete="off">
+                <button class="click-btn" >Add</button>
+            </div>
+        </div>
+        <div class="show-task">
+            <h2>Your Tasks 🏃‍♂️</h2>
+        </div>
+
+    
+        <div class="edit-modal hidden" >
+            <div class="modal-header">
+                <button class="close-modal">&times;</button>
+                <h2>Edit Item ✍️</h2>
+            </div>
+
+            <div class="edit-place">
+                <input type="text" id="edit-text" autocomplete="off">
+                <button class= "save-btn">Save</button>
+            </div>
+        </div>
+
+        <div class="alert-modal hidden">
+            <button class="close-Alertmodal">&times;</button>
+            <h1>Enter the task!🤦‍♂️</h1>
+        </div>
+    </div>
+
+
+    <div class="overlay hidden"></div>
+    <script src="script.js"></script>
+</body>
+</html>
